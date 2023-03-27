@@ -1,0 +1,989 @@
+html {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    height: fit-content;
+}
+
+main {
+    margin: 0;
+    height: fit-content;
+    background-color: #181215;
+    display: flex;
+    justify-content: center;
+}
+
+.point {
+    cursor: pointer;
+}
+
+.grey {
+    color: #CCC4C5 !important;
+}
+
+input[type="button" i] {
+    border-radius: 0% !important;
+    appearance: unset;
+    padding: unset;
+}
+
+#streck {
+    position: absolute;
+    width: 5px;
+    left: 50%;
+    margin-left: -2.5px;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.steps {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.prev {
+    height: 100%;
+    width: 50%;
+    position: relative;
+}
+
+.next {
+    height: 100%;
+    width: 50%;
+    position: relative;
+}
+
+.pek {
+    width: auto;
+    height: 15%;
+    position: absolute;
+    bottom: 10%;
+    left: 42%;
+    opacity: 0;
+}
+
+#main-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Första "sliden" */
+
+#first {
+    opacity: 1;
+}
+
+.line-1{
+    font-size: clamp(1em,10em, 15vw);
+    font-family: 'VT323', monospace;
+    font-weight: 300;
+    word-break:break-word;
+}
+
+.hidden {
+    opacity:0;
+}
+
+.console-container {
+    text-align:center;
+    display:block;
+    color:white;
+    margin:auto;
+  }
+
+  .console-underscore {
+    display:inline-block;
+    position:relative;
+    top:-0.14em;
+    left:10px;
+    color: transparent;
+    display: none;
+ }
+
+/* Andra "sliden" */
+
+#second {
+    display: none;
+}
+
+.h1 {
+    font-weight: 300;
+    font-size: clamp(1em, 8.5em, 10vw);
+    font-family: 'VT323', monospace;
+    text-align: center;
+}
+
+/* Tredje "sliden" */
+
+
+#third {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#mobilVideo {
+    display: none;
+}
+
+#ipadVideo {
+    display: none;
+    height: auto;
+    width: 100%;
+}
+
+#pcVideo {
+    display: block;
+}
+
+/* Fjärde "sliden" */
+
+#fourth {
+    display: none;
+}
+
+.h1_black {
+    color: black;
+    font-size: clamp(1em, 8em, 11vw);
+    font-family: 'VT323', monospace;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Femte "sliden" */
+
+#fift {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-shadow: -5px 5px white;
+    z-index: 5;
+}
+
+.h1_black6 {
+    color: black;
+    font-size: clamp(1em, 8em, 11vw);
+    font-family: 'VT323', monospace;
+    text-align: center;
+    margin-bottom: 1%;
+    margin-top: 2%;
+    text-shadow: -5px 5px white;
+}
+
+.h1_black6L {
+    color: black;
+    font-size: clamp(1em, 5em, 8vw);
+    font-family: 'VT323', monospace;
+    text-align: left;
+    width: 75%;
+    max-width: 850px;
+    margin-bottom: 1%;
+    margin-top: 2%;
+}
+
+.Z {
+    z-index: 50;
+}
+
+.optionsB {
+    height: 170px;
+    width: 75%;
+    max-width: 850px;
+    margin: 0 auto;
+    border: solid 8px black;
+    color: black;
+    font-size: clamp(2rem, 9vw, 9vh);
+    font-family: 'VT323', monospace;
+}
+
+/* Kontakt "sliden" */
+
+#contact {
+    display: none;
+    background-color: #FF5E90;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 75%;
+    width: 100%;
+}
+
+#alert {
+    position: absolute;
+    top: 15%;
+    width: 80%;
+    background-color: white;
+    transform: translateY(-200%);
+    border: solid 8px black;
+    transition: all 2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    z-index: 10;
+}
+
+#nummerAlert {
+    display: none;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#mailAlert {
+    display: none;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.h1_blackC {
+    color: black;
+    font-size: clamp(1em, 8em, 11vw);
+    font-family: 'VT323', monospace;
+    text-align: left;
+    margin: 0;
+    text-shadow: -5px 5px white;  
+}
+
+.contactWrap {
+    display:flex;
+    width: 100%;
+    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+.contact-div {
+    width: 75%;
+    max-width: 800px;
+    height: fit-content;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2%;
+    justify-content: space-between;
+    border: solid 8px black;
+}
+
+.contactA {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: fit-content
+}
+
+.contactB {
+    display: flex;
+    justify-content: space-between;
+    width: 96%;
+    height: fit-content
+}
+
+.phone8bit {
+    width: 60%;
+}
+
+h2 {
+    color: black;
+    font-size: clamp(1em, 6em, 8vw);
+    font-family: 'VT323', monospace;
+    margin-bottom: 1%;
+    margin-top: 2%;
+}
+
+.mail8bit {
+    width: 60%;
+}
+
+.h2small {
+    color: black;
+    font-size: clamp(1em, 4.6em, 6.3vw);
+    font-family: 'VT323', monospace;
+    text-align: left;
+    margin-bottom: 1%;
+    margin-top: 2%;
+}
+
+.contact-done {
+    position: absolute;
+    bottom: 2%;
+    width: 100%;
+    height: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.done {
+    height: fit-content;
+    padding: 1% 2%;
+    width: 40%;
+    margin: 0 auto;
+    border: solid 8px black;
+    color: black;
+    font-size: clamp(1em, 5em, 7vw);
+    font-family: 'VT323', monospace;
+    max-width: 500px;
+    background-color: white;
+}
+
+.back {
+    margin: 0 auto;
+    color: black;
+    font-size: clamp(2em, 3em, 4vw);
+    font-family: 'VT323', monospace;
+    text-decoration: underline;
+}
+
+/* Boka "sliden" */
+#book {
+    display: none;
+    background-color: #FF5E90;
+    width: 100%;
+    height: fit-content;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.boka {
+    text-shadow: -5px 5px white;
+    margin: 0 0;
+    color: black;
+    font-size: clamp(6em, 8em, 11vw);
+    font-family: 'VT323', monospace;
+    text-align: center;
+}
+
+.pcBoka {
+    width: 100%;
+    height: 80%;
+    min-height: 750px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    z-index: 5;
+}
+
+.pil {
+    max-width: 85px;
+    width: 85px;
+}
+
+#weekCalender {
+    width: 50%;
+    min-width: 660px;
+    max-width: 680px;
+    height: 700px;
+    min-height: 700px;
+    padding: 0 5%;
+}
+
+#weekChoice {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#week1 {
+    display: flex;
+}
+
+#week2 {
+    display: none;
+}
+
+#week3 {
+    display: none;
+}
+
+#week4 {
+    display: none;
+}
+
+.week {
+    font-size: 4.5em;
+}
+
+.datum {
+    height: 5%;
+    margin: 0;
+    font-size: 30px;
+    font-family: 'VT323', monospace;
+}
+
+#cWeek1 {
+    display: flex;
+}
+
+#cWeek2 {
+    display: none;
+}
+
+#cWeek3 {
+    display: none;
+}
+
+#cWeek4 {
+    display: none;
+}
+
+table {
+    height: 80%;
+    width: 100%;
+}
+
+tbody {
+    height: 100%;
+}
+
+tr {
+    height: 100%;
+}
+
+th {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bookedTime {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.call {
+    font-size: 25px;
+    font-family: 'VT323', monospace;
+    background-color: white;
+    height: 13%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid black 3px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70%;
+    min-height: 525px;
+    justify-content: space-evenly;
+    width: 35%;
+    min-width: 450px;
+    position: relative;
+    border: solid black 2px;
+    box-shadow: -5px 5px black;
+    margin: 2% 2%;
+    background-color: white;
+}
+
+label {
+    height: fit-content;
+    padding: 1%;
+    width: 84%;
+    display: flex;
+    align-items: center;
+    font-size: 38px;
+    justify-content: center;
+    font-family: 'VT323', monospace;
+}
+
+input {
+    border: solid black 3px;
+    width: 65%;
+}
+
+input[type="text" i] {
+    padding: 1px 2px;
+    font-size: 30px;
+    font-family: 'VT323', monospace;
+    max-width: 350px;
+}
+
+input[type="number" i] {
+    padding: 1px 2px;
+    font-size: 30px;
+    font-family: 'VT323', monospace;
+    max-width: 350px;
+}
+
+#inputs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="checkbox" i] {
+    height: 30px;
+    margin-right: 5%;
+    box-shadow: 0px 0px 0px 2px rgb(0 0 0);
+    width: 30px;
+    cursor: pointer;
+    appearance: unset;
+    background-color: white;
+    border: none;
+    border-radius: 0%;
+}
+input[type="checkbox" i]:checked {
+    height: 30px;
+    margin-right: 5%;
+    box-shadow: 0px 0px 0px 2px rgb(0 0 0);
+    width: 30px;
+    cursor: pointer;
+    appearance: auto;
+    background-color: white;
+    border: none;
+    border-radius: 0%;
+}
+
+#checkboxx {
+    display: flex;
+    height: fit-content;
+    width: 75%;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+}
+
+#checkboxText {
+    font-size: 22px;
+    font-family: 'VT323', monospace;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+#yeit {
+    height: 95px;
+    width: 60%;
+    font-family: 'VT323', monospace;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    border: white solid 4px;
+    text-shadow: -4px 3px rgb(255 94 144);
+    max-width: 280px;
+}
+
+#validateText {
+    font-size: 30px;
+    font-family: 'VT323', monospace;
+}
+
+.bigscreen {
+    color: black;
+    font-size: clamp(1em, 4em, 8vw);
+    font-family: 'VT323', monospace;
+    margin-bottom: 1%;
+    margin-top: 2%;
+}
+
+#backiluring {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width:1300px) {
+    
+    .boka {
+        text-shadow: -5px 5px white;
+        margin: 0 0;
+        color: black;
+        font-size: clamp(6em, 8em, 11vw);
+        font-family: 'VT323', monospace;
+        text-align: center;
+    }
+
+    #backiluring {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin: 1% 0 2% 0;
+    }
+}
+
+@media only screen and (max-width:1060px) {
+
+    #mobilVideo {
+        display: none;
+    }
+    
+    #ipadVideo {
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+    
+    #pcVideo {
+        display: none;
+    }
+
+    #alert {
+        position: absolute;
+        top: 10%;
+        width: 80%;
+        background-color: white;
+        transform: translateY(-200%);
+        border: solid 8px black;
+        transition: all 2s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 200px;
+        z-index: 10;
+    }
+
+    #contact {
+        display: none;
+        background-color: #FF5E90;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 100%;
+        width: 100%;
+    }
+
+    .contactWrap {
+        display:flex;
+        width: 100%;
+        height: 50%;
+        flex-direction: column;
+        align-items: center;
+        z-index: 1;
+        justify-content: flex-end;
+    }
+
+    .contact-div {
+        width: 75%;
+        max-width: 800px;
+        height: fit-content;
+        min-height: 100px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2%;
+        justify-content: space-between;
+        border: solid 8px black;
+    }
+
+    .h1_blackC {
+        color: black;
+        font-size: clamp(7em, 8em, 11vw);
+        font-family: 'VT323', monospace;
+        text-align: left;
+        margin: 0;
+        text-shadow: -5px 5px white;
+    }    
+
+    .contact-done {
+        position: relative;
+        bottom: unset;
+        width: 100%;
+        height: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    #book {
+        display: none;
+        background-color: #FF5E90;
+        width: 100%;
+        height: fit-content;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .boka {
+        text-shadow: -5px 5px white;
+        margin: 5% 0;
+        color: black;
+        font-size: clamp(8em, 8em, 11vw);
+        font-family: 'VT323', monospace;
+        text-align: center;
+    }
+
+    .pcBoka {
+        width: 100%;
+        height: fit-content;
+        min-height: 750px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        z-index: 5;
+    }
+
+    #weekCalender {
+        width: 90%;
+        min-width: 620px;
+        max-width: unset;
+        height: 100%;
+        min-height: 700px;
+        padding: 0 0%;
+    }
+
+    table {
+        height: 80%;
+        width: 100%;
+        min-height: 800px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 70%;
+        min-height: 525px;
+        justify-content: space-evenly;
+        width: 90%;
+        min-width: 450px;
+        position: relative;
+        border: solid black 2px;
+        box-shadow: -5px 5px black;
+        margin: 0 2% 5% 2%;
+        background-color: white;
+    }
+
+    .done {
+        height: 140px;
+        padding: 1% 2%;
+        width: 60%;
+        margin: 0 auto;
+        border: solid 8px black;
+        color: black;
+        font-size: clamp(4em, 5em, 7vw);
+        font-family: 'VT323', monospace;
+        max-width: 500px;
+        background-color: white;
+    }
+
+    .back {
+        margin: 0 auto;
+        color: black;
+        font-size: clamp(3.5em, 3em, 4vw);
+        font-family: 'VT323', monospace;
+        text-decoration: underline;
+    }
+
+    #backiluring {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin: 1% 0 2% 0;
+    }
+
+}
+
+@media only screen and (max-width:660px) {
+
+    #mobilVideo {
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+    
+    #ipadVideo {
+        display: none;
+    }
+    
+    #pcVideo {
+        display: none;
+    }
+
+    .optionsB {
+        height: clamp(2rem, 20vw, 15vh);
+        width: 75%;
+        max-width: 850px;
+        margin: 0 auto;
+        border: solid 8px black;
+        color: black;
+        font-size: clamp(2rem, 9vw, 9vh);
+        font-family: 'VT323', monospace;
+    }
+
+    .boka {
+        text-shadow: -5px 5px white;
+        margin: 5% 0;
+        color: black;
+        font-size: clamp(5em, 8em, 11vw);
+        font-family: 'VT323', monospace;
+        text-align: center;
+    }
+
+    #alert {
+        position: absolute;
+        top: 10%;
+        width: 80%;
+        background-color: white;
+        transform: translateY(-200%);
+        border: solid 8px black;
+        transition: all 2s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 200px;
+        z-index: 10;
+    }
+
+    .h1_blackC {
+        color: black;
+        font-size: clamp(6em, 8em, 11vw);
+        font-family: 'VT323', monospace;
+        text-align: left;
+        margin: 0;
+        text-shadow: -5px 5px white;
+    }
+
+    #contact {
+        display: none;
+        background-color: #FF5E90;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 100%;
+        width: 100%;
+    }
+
+    .contactWrap {
+        display:flex;
+        width: 100%;
+        height: 50%;
+        flex-direction: column;
+        align-items: center;
+        z-index: 1;
+        justify-content: flex-end;
+    }
+
+    .contact-done {
+        position: relative;
+        bottom: unset;
+        width: 100%;
+        height: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .contact-div {
+        width: 75%;
+        max-width: 800px;
+        height: fit-content;
+        min-height: 100px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2%;
+        justify-content: space-between;
+        border: solid 8px black;
+    }
+
+    .done {
+        height: 100px;
+        padding: 1% 2%;
+        width: 60%;
+        margin: 0 auto;
+        border: solid 8px black;
+        color: black;
+        font-size: clamp(3em, 5em, 7vw);
+        font-family: 'VT323', monospace;
+        max-width: 500px;
+        background-color: white;
+    }
+
+    #weekCalender {
+        width: 90%;
+        min-width: 400px;
+        max-width: unset;
+        height: 100%;
+        min-height: 700px;
+        padding: 0 0%;
+    }
+
+    .back {
+        margin: 0 auto;
+        color: black;
+        font-size: clamp(2.5em, 3em, 4vw);
+        font-family: 'VT323', monospace;
+        text-decoration: underline;
+    }
+
+}
+
+@media only screen and (max-height:660px) {
+
+    #fift {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        min-height: 650px;
+        text-shadow: -5px 5px white;
+        background-color: rgb(255, 94, 144);
+        z-index: 5;
+    }
+
+    #contact {
+        display: none;
+        background-color: #FF5E90;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 75%;
+        min-height: 750px;
+        width: 100%;
+    }
+
+    .contact-done {
+        position: relative; 
+        bottom: 2%;
+        width: 100%;
+        height: 23%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+}
