@@ -4,12 +4,13 @@
         <title> Kontakt | Näck på nätet </title>
         <meta name="google-site-verification" content="eNBc7Cwi3V09UMFuT71TavlUyDX_eCZ5ThHZb6nb4jQ" />
         <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=0.5" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Vi hjälper dig skapa ett smultronställe på nätet">
         <meta http-equiv=”content-language” content=”sv-SE”/>
         <link rel="icon" href="https://xn--nck-qla.com/favicon.ico">
         <link rel="stylesheet" type="text/css" href="./styles/kontakt.css"/>
         <link rel="stylesheet" type="text/css" href="./styles/header.css"/>
+    <link rel="stylesheet" type="text/css" href="./styles/footer.css" />
         <script type="text/javascript" src="./scripts/kontakt.js" async></script>
         <script src="https://cdn.jsdelivr.net/npm/lottie-web@5.7.14/build/player/lottie.min.js"></script>
 </head>
@@ -64,8 +65,9 @@
             <div id="lottie-animation-1"></div>
         </section>
         </main>
-        <footer>
-        </footer>
+        <?php
+            include './footer.php';
+        ?>
         <script>
                 function loadLottieAnimations() {
                 // Load the Lottie animations here
@@ -74,7 +76,7 @@
                         renderer: 'svg',
                         loop: true,
                         autoplay: true,
-                        path: './images/kontakt/half-moon.json'
+                        path: '../tpl/images/kontakt/half-moon.json'
                 });
                 }
 
@@ -86,5 +88,5 @@
                         console.error('Lottie library is not loaded');
                 }
                 });
-    </script>
+        </script>
 </body>

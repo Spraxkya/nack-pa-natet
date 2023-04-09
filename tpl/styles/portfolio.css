@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+body {
+    background: rgb(187,204,255);
+    background: linear-gradient(0deg, rgba(187,204,255,1) 0%, rgba(13,46,60,0.5074404761904762) 100%);
+}
+
+main {
+    position: relative;
+    overflow: hidden;
+    min-height: 700px;
+    height: 95vh;
+}
+
+header div {
+    z-index: 3;
+}
+
+header .drop {
+    background-color: #276295 !important;
+}
+
+#lottie-animation-1 {
+    position: relative;
+    width: fit-content;
+    height: 25vh;
+    left: 36%;
+    z-index: 5;
+}
+
+#lottie-animation-2 {
+    position: absolute;
+    width: 50%;
+    height: fit-content;
+    top: -85px;
+}
+
+#lottie-animation-3 {
+    position: absolute;
+    width: 50%;
+    height: fit-content;
+    top: -85px;
+    right: 0;
+}
+
+#lottie-animation-4 {
+    position: relative;
+    width: fit-content;
+    height: 15vh;
+    top: -20%;
+    left: 50%;
+    z-index: 5;
+}
+
+#lottie-animation-5 {
+    position: absolute;
+    width: fit-content;
+    height: 12vh;
+    top: 30vh;
+    left: 50%;
+    z-index: 5;
+}
+
+#cloud1 {
+    position: absolute;
+    z-index: 1;
+    min-width: 350px;
+    width: 30%;
+    top: 35px;
+    right: 35%;
+}
+
+#cloud1 path {
+    fill: #5d5d5d99;
+}
+
+.hero {
+    position: relative;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero .headings {
+    z-index: 2;
+}
+
+.hero .headings h1 {
+    position: relative;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 3.5em;
+    text-align: center;
+    z-index: 2;
+}
+
+.banner {
+    position: absolute;
+    z-index: 2;
+    min-height: 150px;
+    width: 100%;
+    cursor: grab;
+    cursor: -webkit-grab;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    bottom: 60px;
+}
+
+.banner .container .content {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100%;
+}
+
+.banner .container {
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: fit-content;
+}
+
+.banner::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Opera */
+}
+
+.banner .container .info {
+    min-width: 750px;
+    height: 370px;
+    background-color: #02002f;
+    display: flex;
+    justify-content: center;
+    border-top-left-radius: 450px;
+    border-top-right-radius: 450px;
+    margin: 0 -100px;
+}
+
+.banner .container .info a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4em;
+    user-select: none;
+    color: white;
+    padding-top: 60px;
+    height: fit-content;
+}
+
+.banner2 {
+    position: absolute;
+    z-index: 2;
+    min-height: 150px;
+    width: 100%;
+    cursor: grab;
+    cursor: -webkit-grab;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    bottom: -90px;
+}
+
+.banner2 .container .content {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100%;
+}
+
+.banner2 .container {
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: fit-content;
+}
+
+.banner2::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Opera */
+}
+
+.banner2 .container .info {
+    min-width: 750px;
+    height: 370px;
+    background-color: #276295;
+    display: flex;
+    justify-content: center;
+    border-top-left-radius: 450px;
+    border-top-right-radius: 450px;
+    margin: 0 -100px;
+}
+
+.banner2 .container .info a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4em;
+    user-select: none;
+    color: white;
+    padding-top: 60px;
+    height: fit-content;
+}
+
+.buttons {
+    position: absolute;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 5;
+    bottom: 8%;
+}
+
+.buttons .container {
+    position: relative;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 5;
+}
+
+.buttons .container a {
+    min-height: 80px;
+    max-height: 90px;
+    min-width: 120px;
+    width: 30%;
+    max-width: 200px;
+}
+
+.buttons .container a button{
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    color: white;
+    background-color: #02002f;
+    border: none;
+    border-radius: 15px;
+}
+
+.buttons .container a button:hover {
+    color: #02002f;
+    background-color: white;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:970px) {
+
+    #lottie-animation-2 {
+        position: absolute;
+        width: 100%;
+        height: 85%;
+        top: -20%;
+    }
+
+    #lottie-animation-3 {
+        display: none;
+    }
+
+    #lottie-animation-4 {
+        display: none;
+    }
+
+    #lottie-animation-5 {
+        display: none;
+    }
+
+    #cloud1 {
+        position: absolute;
+        z-index: 1;
+        min-width: 350px;
+        width: 30%;
+        top: 35px;
+        right: 25%;
+    }
+
+    .buttons .container a{
+        min-height: 70px;
+        max-height: 90px;
+        min-width: 150px;
+        width: 30%;
+        max-width: 200px;
+    }
+}
