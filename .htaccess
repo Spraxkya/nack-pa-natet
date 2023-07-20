@@ -1,0 +1,12 @@
+RewriteEngine On
+RewriteBase /
+
+# Rewrite requests for /filename to /tpl/filename.php
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^/]+)/?$ tpl/$1.php [L]
+
+# Rewrite requests for /blogg/filename to /tpl/blogg/filename.php
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^blogg/([^/]+)/?$ tpl/blogg/$1.php [L]

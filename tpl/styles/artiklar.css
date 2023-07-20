@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,700;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+
+body {
+    background-image: url('../images/122931-blackboard-background-2604x1737-download-free.jpg');
+    color: white;
+}
+
+header .drop {
+    background-color: #2d2d2d !important;
+}
+
+#lottie-animation-1 {
+    height: 150px;
+}
+
+svg g path {
+    fill: white;
+    stroke: white;
+}
+
+h1 {
+    font-family: 'Chelsea Market', cursive;
+    font-size: 3.5em;
+    color: #ececec;
+    font-weight: 500;
+    width: 1250px;
+    margin: 50px auto;
+}
+
+#post-container {
+    width: 1250px;
+    height: fit-content;
+    margin: 0 auto;
+}
+
+#post-container .post {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 4%;
+    margin: 0 0 40px 0;
+    background-color: #00000040;
+}
+
+#post-container .post img {
+    min-width: 250px;
+    width: 30%;
+    height: auto;
+}
+
+#post-container .post .post-content {
+    padding: 15px 0 15px 30px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+#post-container .post .post-content .post-date {
+    padding: 0 0 25px 0;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 1.3em;
+    color: white;
+}
+
+#post-container .post .post-content h2 {
+    padding: 0 0 15px 0;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 1.5em;
+    color: white;
+}
+
+#post-container .post .post-content p:nth-of-type(2) {
+    padding: 0 0 15px 0;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 1em;
+    color: white;
+}
+
+#post-container .post .post-content .button-container {
+    padding: 35px 0 0 0;
+}
+
+#post-container .post .button-container a {
+    background-color: #6F99AC;
+    text-decoration: none;
+    padding: 10px 40px;
+    border-radius: 25px;
+    width: fit-content;
+    height: fit-content;
+    margin: 25px 0 0 0;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 1.1em;
+    color: white;
+}
+
+#post-container .post .button-container a:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #a8a8a8b5;
+}
+
+#load-more {
+    width: 275px;
+    height: 75px;
+    display: block;
+    background-color: #FF8484;
+    text-decoration: none;
+    color: white;
+    border-radius: 25px;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    margin: 100px auto;
+}
+
+#load-more:hover {
+    color:white;
+    text-decoration: none;
+    background-color: #a8a8a8b5;
+}
+
+#full {
+    display: block;
+    width: 1250px;
+    margin: 100px auto;
+    text-align: center;
+    font-family: 'Chelsea Market', cursive;
+    font-size: 3.5em;
+    color: #ececec;
+    font-weight: 500;
+}
+
+@media only screen and (max-width:1700px) {
+    
+    #post-container {
+        width: 75%;
+        height: fit-content;
+        margin: 0 auto;
+    }
+
+    h1 {
+        width: 75%;
+        margin: 50px auto;
+    }
+
+    #full {
+        display: block;
+        width: 75%;
+        margin: 100px auto;
+        text-align: center;
+        font-family: 'Chelsea Market', cursive;
+        font-size: 3.5em;
+        color: #ececec;
+        font-weight: 500;
+    }
+
+}
+
+@media only screen and (max-width:970px) {
+    
+    #post-container .post {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        padding: 4%;
+        margin: 0 0 40px 0;
+        background-color: #00000040;
+        flex-direction: column;
+    }
+
+    #post-container .post img {
+        min-width: unset;
+        width: 90%;
+        height: auto;
+        padding: 20px 0 10px 0;
+    }
+
+}
+
+@media only screen and (max-width:465px) {
+    
+    #load-more {
+        width: 175px;
+        height: 75px;
+        display: block;
+        background-color: black;
+        text-decoration: none;
+        color: white;
+        border-radius: 25px;
+        font-family: 'Urbanist', sans-serif;
+        font-size: 1.2em;
+        border: none;
+        cursor: pointer;
+        margin: 100px auto;
+    }
+
+}

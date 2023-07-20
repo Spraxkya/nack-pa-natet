@@ -2,15 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 body {
-    background: rgb(187,204,255);
-    background: linear-gradient(0deg, rgba(187,204,255,1) 0%, rgba(13,46,60,0.5074404761904762) 100%);
+    background: rgb(29,28,26);
+    background: linear-gradient(180deg, rgba(29,28,26,1) 2vh, rgba(31,37,53,1) 5vh, rgba(38,59,116,1) 35vh, rgba(125,172,214,1) 87vh);
 }
-
+ /* 1D8BFF */
 main {
     position: relative;
     overflow: hidden;
-    min-height: 700px;
-    height: 95vh;
 }
 
 header div {
@@ -18,14 +16,15 @@ header div {
 }
 
 header .drop {
-    background-color: #276295 !important;
+    background-color: #042D5C !important;
 }
 
 #lottie-animation-1 {
-    position: relative;
+    position: absolute;
     width: fit-content;
-    height: 25vh;
-    left: 36%;
+    height: 15vh;
+    top: 270px;
+    left: 30%;
     z-index: 5;
 }
 
@@ -33,23 +32,23 @@ header .drop {
     position: absolute;
     width: 50%;
     height: fit-content;
-    top: -85px;
+    top: -30px;
 }
 
 #lottie-animation-3 {
     position: absolute;
     width: 50%;
     height: fit-content;
-    top: -85px;
+    top: -30px;
     right: 0;
 }
 
 #lottie-animation-4 {
-    position: relative;
-    width: fit-content;
-    height: 15vh;
-    top: -20%;
-    left: 50%;
+    position: absolute;
+    width: auto;
+    height: 200px;
+    top: 280px;
+    left: 45%;
     z-index: 5;
 }
 
@@ -57,34 +56,61 @@ header .drop {
     position: absolute;
     width: fit-content;
     height: 12vh;
-    top: 30vh;
-    left: 50%;
+    top: 275px;
+    left: 60%;
     z-index: 5;
 }
 
-#cloud1 {
+#lottie-animation-5 svg:nth-of-type(2) {
+    display: block;
     position: absolute;
-    z-index: 1;
-    min-width: 350px;
-    width: 30%;
-    top: 35px;
-    right: 35%;
+    width: auto !important;
+    height: 150px !important;
+    top: 120px;
+    left: 55px;
 }
 
-#cloud1 path {
-    fill: #5d5d5d99;
+#lottie-animation-6 {
+    position: absolute;
+    width: 1920px;
+    z-index: 0;
+    bottom: -470px;
+}
+
+svg g g:nth-of-type(3) g:nth-of-type(2) {
+    display: none;
+}
+
+.sten {
+    height: 500px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 .hero {
     position: relative;
-    height: fit-content;
+    min-height: 840px;
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
 }
 
 .hero .headings {
-    z-index: 2;
+    z-index: 10;
+    background-image: url(../images/portfolio/moln.svg);
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.moln {
+    display: none;
 }
 
 .hero .headings h1 {
@@ -98,161 +124,243 @@ header .drop {
     z-index: 2;
 }
 
+.hero .headings span {
+    position: relative;
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.5em;
+    text-align: center;
+    z-index: 2;
+}
+
+.underTitel {
+    display: block;
+    width: 80%;
+    margin: 0 auto;    
+    color: #000000;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.5em;
+}
+
 .banner {
-    position: absolute;
-    z-index: 2;
-    min-height: 150px;
+    position: relative;
+    display: block;
     width: 100%;
-    cursor: grab;
-    cursor: -webkit-grab;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    bottom: 60px;
+    height: fit-content;
+    padding: 40px 0 0px 0;
+    background-color: white;
+    z-index: 10;
 }
 
-.banner .container .content {
+.grid {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
     display: flex;
-    flex-wrap: nowrap;
-    height: 100%;
-}
-
-.banner .container {
-    height: 100%;
-    display: flex;
-    flex-wrap: nowrap;
+    flex-direction: column;
     align-items: center;
-    width: fit-content;
 }
 
-.banner::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, and Opera */
-}
-
-.banner .container .info {
-    min-width: 750px;
-    height: 370px;
-    background-color: #02002f;
+.grid .info {
+    width: 80%;
+    min-height: 400px;
+    height: fit-content;
+    background: linear-gradient(90deg, #0080ff42 0%, #0080ff17 50%);
+    border-radius: 15px;
     display: flex;
     justify-content: center;
-    border-top-left-radius: 450px;
-    border-top-right-radius: 450px;
-    margin: 0 -100px;
-}
-
-.banner .container .info a{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.4em;
-    user-select: none;
-    color: white;
-    padding-top: 60px;
-    height: fit-content;
-}
-
-.banner2 {
-    position: absolute;
-    z-index: 2;
-    min-height: 150px;
-    width: 100%;
-    cursor: grab;
-    cursor: -webkit-grab;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    bottom: -90px;
-}
-
-.banner2 .container .content {
-    display: flex;
-    flex-wrap: nowrap;
-    height: 100%;
-}
-
-.banner2 .container {
-    height: 100%;
-    display: flex;
-    flex-wrap: nowrap;
     align-items: center;
-    width: fit-content;
+    flex-direction: column;
+    margin: 50px 0 100px 0;
+    transition: opacity 1s ease-in-out;
 }
 
-.banner2::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, and Opera */
-}
-
-.banner2 .container .info {
-    min-width: 750px;
-    height: 370px;
-    background-color: #276295;
+.grid .pil {
+    display: block;
+    width: 30px;
+    height: 50px;
     display: flex;
+    align-items: center;
     justify-content: center;
-    border-top-left-radius: 450px;
-    border-top-right-radius: 450px;
-    margin: 0 -100px;
+    cursor: pointer;
 }
 
-.banner2 .container .info a{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.4em;
-    user-select: none;
-    color: white;
-    padding-top: 60px;
-    height: fit-content;
-}
-
-.buttons {
+.grid .pilV {
     position: absolute;
-    height: fit-content;
+    top: 130px;
+    left: 20%;
+}
+
+.grid .pilH {
+    position: absolute;
+    top: 130px;
+    right: 20%;
+    transform: rotateZ(180deg);
+}
+
+.grid .pil img {
+    width: 100%;
+    height: auto;
+}
+
+.grid .info .head {
+    min-height: 100px;
     width: 100%;
     display: flex;
     justify-content: center;
-    z-index: 5;
-    bottom: 8%;
+    margin-top: 40px;
 }
 
-.buttons .container {
+.grid .info .hej {
+    min-height: 125px;
+    height: 100%;
+    min-width: 25%;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.grid .info .hej img {
+    min-height: 80px;
+    max-height: 120px;
+    max-width: 460px;
+}
+
+
+.grid .info h2 {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.5em;
+    margin-left: 30px;
+}
+
+.grid .info .exImg {
+    width: 80%;
+    margin: 40px;
+    border-radius: 15px;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    color: #00123a;
+    margin: 0 0 12px 0;
+}
+
+.grid .info .infoText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin-bottom: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.buttons{
     position: relative;
     height: fit-content;
-    width: 100%;
+    width: 75%;
     display: flex;
     justify-content: space-evenly;
+    margin: 0 0 40px 0;
     z-index: 5;
 }
 
-.buttons .container a {
+.buttons .link {
     min-height: 80px;
     max-height: 90px;
-    min-width: 120px;
+    min-width: 180px;
     width: 30%;
     max-width: 200px;
+    text-decoration: none;
 }
 
-.buttons .container a button{
+.buttons .link button{
+    min-width: 150px;
     width: 100%;
+    max-width: 220px;
     height: 100%;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2em;
     color: white;
-    background-color: #02002f;
     border: none;
     border-radius: 15px;
+    padding: 25px;
 }
 
-.buttons .container a button:hover {
-    color: #02002f;
+.buttons .link:nth-of-type(1) button:nth-of-type(1) {
+    background-color: #4b74a9;
+}
+
+.buttons .link:nth-of-type(2) button:nth-of-type(1) {
+    background-color: #4d846b;
+}
+
+.buttons .link:nth-of-type(1) button:nth-of-type(1):hover {
     background-color: white;
+    color: #4b74a9;
+    cursor: pointer;
+}
+
+.buttons .link:nth-of-type(2) button:nth-of-type(1):hover {
+    background-color: white;
+    color: #4d846b;
     cursor: pointer;
 }
 
 @media only screen and (max-width:970px) {
 
+    .hero {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .hero .headings {
+        background-size: cover;
+    }
+
+    #lottie-animation-1 {
+        position: absolute;
+        width: 100%;
+        height: 200px;
+        top: 280px;
+        left: unset;
+        display: flex;
+        z-index: 5;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #lottie-animation-1 svg:nth-of-type(2) {
+        display: block;
+        position: absolute;
+        width: auto !important;
+        height: 130px !important;
+        top: 200px;
+        left: unset;
+    }
+    
     #lottie-animation-2 {
         position: absolute;
         width: 100%;
         height: 85%;
-        top: -20%;
+        top: 0;
     }
 
     #lottie-animation-3 {
@@ -267,20 +375,208 @@ header .drop {
         display: none;
     }
 
-    #cloud1 {
+    .grid .pilV {
         position: absolute;
-        z-index: 1;
-        min-width: 350px;
-        width: 30%;
-        top: 35px;
-        right: 25%;
+        top: 115px;
+        left: 20%;
     }
 
-    .buttons .container a{
-        min-height: 70px;
-        max-height: 90px;
-        min-width: 150px;
-        width: 30%;
-        max-width: 200px;
+    .grid .pilH {
+        position: absolute;
+        top: 115px;
+        right: 20%;
+        transform: rotateZ(180deg);
     }
+
+    .grid .info .hej {
+        min-height: unset;
+        height: 100%;
+        min-width: 25%;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+    }
+
+    .grid .info .hej img {
+        min-height: 80px;
+        max-height: 120px;
+        max-width: 250px;
+    }
+
+}
+
+@media only screen and (max-width:750px) {
+
+    .grid .info {
+        width: 95%;
+    }
+
+    #lottie-animation-1 {
+        position: absolute;
+        width: 100%;
+        height: 140px;
+        top: 280px;
+        left: unset;
+        display: flex;
+        z-index: 5;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #lottie-animation-6 {
+        position: absolute;
+        width: 1920px;
+        z-index: 4;
+        bottom: -470px;
+    }
+
+    .underTitel {
+        font-size: 1.8em;
+    }
+    
+    .buttons {
+        position: relative;
+        height: fit-content;
+        width: 75%;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0 0 40px 0;
+        z-index: 5;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttons .link {
+        min-height: 80px;
+        max-height: unset;
+        min-width: 180px;
+        width: 70%;
+        max-width: unset; 
+        text-decoration: none;
+    }
+
+    .buttons .link button {
+        min-width: 150px;
+        width: 100%;
+        max-width: unset;
+        height: 100%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.2em;
+        color: white;
+        border: none;
+        border-radius: 15px;
+        padding: 25px;
+        margin: 10px auto;
+        display: block;
+    }
+
+    .grid .info .head {
+        min-height: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .grid .info .hej img {
+        min-height: 80px;
+        max-height: 120px;
+        max-width: 190px;
+    }
+
+    .grid .pil img {
+        width: 70%;
+        height: auto;
+    }
+
+    .grid .pilH {
+        position: absolute;
+        top: 95px;
+        right: 5%;
+        transform: rotateZ(180deg);
+    }
+
+    .grid .pilV {
+        position: absolute;
+        top: 95px;
+        left: 5%;
+    }
+
+    .grid .info .exImg {
+        width: 80%;
+        margin: 20px 40px 40px 40px;
+        border-radius: 15px;
+    }
+
+}
+
+@media only screen and (max-width:460px) {
+    
+    .hero .headings h1 {
+        font-size: 2.8em;
+    }
+
+    .hero .headings span {
+        font-size: 1.5em;
+    }
+
+    #lottie-animation-1 {
+        position: absolute;
+        width: 100%;
+        height: 120px;
+        top: 280px;
+        left: 30%;
+        display: flex;
+        z-index: 5;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttons .container {
+        position: relative;
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        z-index: 5;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttons .container a {
+        min-height: 70px;
+        height: 90px;
+        min-width: 150px;
+        width: 60%;
+        max-width: 200px;
+        margin: 5% 0;
+    }
+
+    .underTitel {
+        font-size: 1.25em;
+    }
+}
+
+@media only screen and (max-width:300px) {
+
+    .hero .headings h1 {
+        font-size: 1.8em;
+    }
+
+    .hero .headings span {
+        font-size: 1.1em;
+    }
+
+    .underTitel {
+        font-size: 1.1em;
+    }
+
+    .grid .info .hej img {
+        min-height: 80px;
+        max-height: 120px;
+        max-width: 130px;
+    }
+
 }

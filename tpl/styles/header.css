@@ -41,7 +41,8 @@ header .logo {
 
 header .logo img {
     height: auto;
-    width: 80%;
+    width: 50%;
+    min-width: 120px;
 }
 
 header .classic {
@@ -96,7 +97,8 @@ header .drop {
     background-color: #427a93;
     top: 0;
     right: 0;
-    z-index: 10;
+    z-index: 20;
+    opacity: 0;
     flex-direction: column;
     border-left: solid black 5px;
 }
@@ -157,7 +159,7 @@ header .drop button img {
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        padding: 0 0 0 60px;
+        padding: 0 0 0 48px;
     }
 
     header .classic {
@@ -222,4 +224,37 @@ header .drop button img {
         border-radius: 5px;
         border: none;
     }
+
+    header .drop {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-color: #427a93;
+        top: 0;
+        right: 0;
+        flex-direction: column;
+        border-left: solid black 5px;
+    }
+
+    header .drop ul {
+        min-height: 200px;
+        height: 35%;
+        max-height: 400px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        list-style: none;
+        padding: 0px 0 0 0%;
+        align-items: center;
+    }
+
+    header .drop #smultronh {
+        position: relative;
+        height: 120px;
+        width: auto;
+        padding: unset;
+        margin: 60px auto;
+    }
+
 }

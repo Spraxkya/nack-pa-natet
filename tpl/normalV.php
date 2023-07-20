@@ -1,75 +1,73 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <title>Näck på nätet | Webbyrå </title>
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MVVF6F3');
+    </script>
+    <!-- End Google Tag Manager -->
+    <title>Näck på nätet | Webbyrå</title>
     <meta name="google-site-verification" content="eNBc7Cwi3V09UMFuT71TavlUyDX_eCZ5ThHZb6nb4jQ" />
     <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <meta http-equiv=”content-language” content=”sv-SE”/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Vi hjälper dig skapa ett smultronställe på nätet">
-    <meta http-equiv=”content-language” content=”sv-SE”/>
+    <meta property="og:title" content="Näck på nätet | Webbyrå">
+    <meta property="og:description" content="Vi hjälper dig skapa ett smultronställe på nätet">
+    <meta property="og:image" content="https://www.nack-pa-natet.se/tpl/images/meta/hem.webp?01">
+    <meta property="og:url" content="https://www.nack-pa-natet.se">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="nack-pa-natet.se">
+    <meta property="twitter:url" content="https://www.nack-pa-natet.se">
+    <meta name="twitter:title" content="Näck på nätet | Webbyrå">
+    <meta name="twitter:description" content="Vi hjälper dig skapa ett smultronställe på nätet">
+    <meta name="twitter:image" content="https://www.nack-pa-natet.se/tpl/images/meta/hem.webp">
     <link rel="icon" href="https://xn--nck-qla.com/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="./tpl/styles/index.css?0003" />
-    <link rel="stylesheet" type="text/css" href="./tpl/styles/header.css?0003" />
-    <link rel="stylesheet" type="text/css" href="./tpl/styles/footer.css?0003" />
-    <script type="text/javascript" src="./tpl/scripts/index.js" async></script>
+    <link rel="stylesheet" type="text/css" href="./tpl/styles/index.css" />
+    <link rel="stylesheet" type="text/css" href="./tpl/styles/header.css"/>
+    <link rel="stylesheet" type="text/css" href="./tpl/styles/footer.css" />
     <script src="https://cdn.jsdelivr.net/npm/lottie-web@5.7.14/build/player/lottie.min.js"></script>
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4WNRMQZXHC"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-4WNRMQZXHC');
+</script>
 <body>
-    <header id="header">
-        <div>
-            <div class="logo">
-                <a href=""><img src="./tpl/images/logo.png" alt=""></a>
-            </div>
-            <nav class="classic">
-                <ul>
-                    <li <?php if ($_SERVER['REQUEST_URI'] == '/nack-pa-natet/') { echo 'class="active"'; } ?>><a href="">Hem</a></li>
-                    <li <?php if ($_SERVER['REQUEST_URI'] == './tpl/erbjudande.php') { echo 'class="active"'; } ?>><a href="./tpl/erbjudande.php">Erbjudande</a></li>
-                    <li <?php if ($_SERVER['REQUEST_URI'] == './tpl/kontakt.php') { echo 'class="active"'; } ?>><a href="./tpl/kontakt.php">Kontakta oss</a></li>
-                    <li <?php if ($_SERVER['REQUEST_URI'] == './tpl/portfolj.php') { echo 'class="active"'; } ?>><a href="./tpl/portfolj.php">Portfölj</a></li>
-                    <li <?php if ($_SERVER['REQUEST_URI'] == './tpl/om-oss.php') { echo 'class="active"'; } ?>><a href="./tpl/om-oss.php">Om oss</a></li>
-                </ul>
-                <button onclick="dropdownMenu();"><img src="./tpl/images/navmenu-100.svg" alt=""></button>
-            </nav>
-        </div>
-        <nav class="drop">
-            <div>
-                <button onclick="dropdownMenu();"><img src="./tpl/images/right-arrow.svg" alt=""></button>
-            </div>
-            <ul>
-                <li <?php if ($_SERVER['REQUEST_URI'] == '/nack-pa-natet/') { echo 'class="active"'; } ?>><a href="">Hem</a></li>
-                <li <?php if ($_SERVER['REQUEST_URI'] == './tpl/erbjudande.php') { echo 'class="active"'; } ?>><a href="./tpl/erbjudande.php">Erbjudande</a></li>
-                <li <?php if ($_SERVER['REQUEST_URI'] == './tpl/kontakt.php') { echo 'class="active"'; } ?>><a href="./tpl/kontakt.php">Kontakta oss</a></li>
-                <li <?php if ($_SERVER['REQUEST_URI'] == './tpl/portfolj.php') { echo 'class="active"'; } ?>><a href="./tpl/portfolj.php">Portfölj</a></li>
-                <li <?php if ($_SERVER['REQUEST_URI'] == './tpl/om-oss.php') { echo 'class="active"'; } ?>><a href="./tpl/om-oss.php">Om oss</a></li>
-            </ul>
-            <svg id="smultronh" data-name="Lager 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 446.45 595.28"><defs><style>.cls-1{fill:#558730;}.cls-2{fill:#185025;}.cls-3{fill:#b0486c;}.cls-4{fill:#eb5d8f;}</style></defs><title>Smultron</title><rect class="cls-1" x="99.2" y="148.82" width="49.61" height="49.61"/><rect class="cls-1" x="198.41" y="148.82" width="49.61" height="49.61"/><rect class="cls-1" x="297.63" y="148.82" width="49.61" height="49.61"/><rect class="cls-2" x="49.61" y="148.82" width="49.59" height="49.61"/><rect class="cls-2" x="99.2" y="198.43" width="49.61" height="49.61"/><rect class="cls-2" x="198.41" y="198.43" width="49.61" height="49.61"/><rect class="cls-2" x="297.63" y="198.43" width="49.61" height="49.61"/><polygon class="cls-2" points="347.24 99.22 347.24 148.82 297.63 148.82 297.63 198.43 248.02 198.43 248.02 148.82 198.41 148.82 198.41 198.43 148.81 198.43 148.81 148.82 99.2 148.82 99.2 99.22 198.41 99.22 198.41 0 248.02 0 248.02 99.22 347.24 99.22"/><rect class="cls-2" x="347.24" y="148.82" width="49.61" height="49.61"/><polygon class="cls-3" points="99.2 297.65 99.2 347.25 49.61 347.25 49.61 446.47 0 446.47 0 198.43 49.61 198.43 49.61 297.65 99.2 297.65"/><rect class="cls-3" x="148.81" y="446.47" width="49.61" height="49.61"/><rect class="cls-4" x="347.24" y="198.43" width="49.61" height="49.61"/><path class="cls-4" d="M396.84,347.25v-49.6h-49.6V248H297.63V198.43H248V248H198.41V198.43h-49.6V248H99.2V198.43H49.61v99.22H99.2v49.6H49.61v99.22H99.2v49.61h49.61V446.47h49.6v49.61h-49.6v49.6H297.63v-49.6h49.61V446.47h49.6V396.86h-49.6V347.25ZM198.41,396.86h-49.6V347.25h49.6Zm99.22,49.61H248V396.86h49.61Zm0-99.22H248v-49.6h49.61Z"/><rect class="cls-3" x="248.02" y="297.65" width="49.61" height="49.61"/><rect class="cls-3" x="248.02" y="396.86" width="49.61" height="49.61"/><rect class="cls-3" x="148.81" y="347.25" width="49.61" height="49.61"/><polygon class="cls-3" points="446.45 198.43 446.45 446.47 396.85 446.47 396.85 396.86 347.24 396.86 347.24 347.25 396.85 347.25 396.85 297.65 347.24 297.65 347.24 248.04 396.85 248.04 396.85 198.43 446.45 198.43"/><rect class="cls-3" x="49.61" y="446.47" width="49.59" height="49.61"/><rect class="cls-3" x="99.2" y="496.08" width="49.61" height="49.61"/><rect class="cls-3" x="148.81" y="545.68" width="148.82" height="49.59"/><rect class="cls-3" x="297.63" y="496.08" width="49.61" height="49.61"/><rect class="cls-3" x="347.24" y="446.47" width="49.61" height="49.61"/></svg>
-        </nav>
-        <script type="text/javascript" src="./tpl/scripts/header.js" async></script>
-    </header>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MVVF6F3" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+<?php
+   include './tpl/header.php';
+?>
     <main>
         <section class="hero">
             <div class="headings">
-                <h1>Placeholder med eftersmak</h1>
+                <h1><input id="placeholder" type="text"> med eftersmak</h1>
             </div>
             <div class="hero-content">
                 <div class="left">
                     <div class="container">
                         <h1>- Ditt smultronställe på nätet! -</h1>
                         <p>
-                            Vi är en webbyrå belägen i Borlänge och dedikerade till att skapa de mest kreativa och unika webbplatserna världen har skådat.
-                        <br>
-                        <br>
-                        <!--    På Näck på Nätet förstår vi vikten av att ha en webbplats som verkligen representerar ditt varumärke och som sticker ut från mängden. Därför arbetar vi nära våra kunder för att designa webbplatser som inte bara är visuellt slående, utan också funktionella och användarvänliga.
-                        <br>
-                        <br> !-->
+                            Vi är en webbyrå belägen i Borlänge dedikerade till att skapa de mest kreativa och unika webbplatserna världen har skådat.
+                        <br><br>
                             Vår passion för kreativitet slutar dock inte där. Vår ultimata vision är att använda vinsten från Näck på Nätet för att driva och försörja vårt kreativa konstkollektiv, Näck, och hjälpa till att bringa mer konst in i världen.
-                        <!--<br>
-                        <br>
-                            Så om du letar efter en webbplats som både är vacker och effektiv, samtidigt som den också stöder en bra sak, behöver du inte leta längre än Näck på Nätet. !-->
                         </p>
                         <div class="container2">
-                            <button>Kontakta oss</button>
-                            <button>Kom och var med!</button>
+                            <a href="./om-oss"><button>Läs mer</button></a>
+                            <a href="./kontakt"><button class="kButton" >Kontakta oss</button></a>
                         </div>
                     </div>
                     <svg id="sky" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792">
@@ -104,28 +102,61 @@
         <section class="banner">
             <div class="container">
                 <div class="content">
-                    <!-- Your .info elements go here -->
-                    <div class="info"><h3><span>Din</span> mamma</h3></div>
-                    <div class="info"><h3><span>Din</span> pappa</h3></div>
-                    <div class="info"><h3><span>Din</span> syster</h3></div>
-                    <div class="info"><h3><span>Din</span> broder</h3></div>
-                    <div class="info"><h3><span>Du</span> också</h3></div>
+                    <!-- Your .info elements go here -->                    
+                    <div class="info"><h3 style="font-size:5em;">99</h3><span style="font-weight: 700;">problems</span></div>
+                    <div class="info"><img src="./tpl/images/home/banner/banner1.svg" alt=""></div>
+                    <div class="info"><span>but a bug <br> aint one</span></div>
+                    <div class="info"><img src="./tpl/images/home/banner/banner2.svg" alt=""></div>
+                    <div class="info"><span>Träffa lokala <br> programmerare</span></div>
+                    <div class="info"><img src="./tpl/images/home/banner/banner3.svg" alt=""></div>
+                    <div class="info"><span>... inom</span> <span style="font-weight: 700;">(2 km)</span></div>
+                    <div class="info"><img src="./tpl/images/home/banner/banner4.svg" alt=""></div>
+                    <div class="info"><span>Vill du</span></div>
+                    <div class="info"><img src="./tpl/images/home/banner/banner5.svg" alt=""></div>
+                    <div class="info"><span>skapa konst <br> med oss?</span></div>
+                    <div class="info"><img src="./tpl/images/home/banner/banner6.svg" alt=""></div>
+                    <div class="info"><span>Ring<br> oss</span></div>
+                    <div class="info"><img src="./tpl/images/home/banner/banner7.svg" alt=""></div>
+                    <div class="info"><span><a href="tel:+46736851904">073-685 1904</a></span></div>
+                    <div class="info"><img src="./tpl/images/home/banner/banner8.svg" alt=""></div>
                 </div>
                 <div class="content">
                     <!-- Your .info elements go here -->
-                    <div id="info6" class="info"><h3><span>Din</span> mamma</h3></div>
-                    <div class="info"><h3><span>Din</span> pappa</h3></div>
-                    <div class="info"><h3><span>Din</span> syster</h3></div>
-                    <div class="info"><h3><span>Din</span> broder</h3></div>
-                    <div class="info"><h3><span>Du</span> också</h3></div>
+                    <div id="info6" class="info"><h3 style="font-size:5em;">99</h3><span style="font-weight: 700;">problems</span></div>
+                    <div class="info"><img src="./tpl/images/home/banner/banner1.svg" alt=""></div>
+                    <div class="info"><span>but a bug <br> aint one</span></div>
+                    <div class="info"><img src="./tpl/images/home/banner/banner2.svg" alt=""></div>
+                    <div class="info"><span>Träffa lokala <br> programmerare</span></div>
+                    <div class="info"><img src="./tpl/images/home/banner/banner3.svg" alt=""></div>
+                    <div class="info"><span>... inom</span> <span style="font-weight: 700;">(2 km)</span></div>
+                    <div class="info"><img src="./tpl/images/home/banner/banner4.svg" alt=""></div>
+                    <div class="info"><span>Vill du</span></div>
+                    <div class="info"><img src="./tpl/images/home/banner/banner5.svg" alt=""></div>
+                    <div class="info"><span>skapa konst <br> med oss?</span></div>
+                    <div class="info"><img src="./tpl/images/home/banner/banner6.svg" alt=""></div>
+                    <div class="info"><span>Ring<br> oss</span></div>
+                    <div class="info"><img src="./tpl/images/home/banner/banner7.svg" alt=""></div>
+                    <div class="info"><span><a href="tel:+46736851904">073-685 1904</a></span></div>
+                    <div class="info"><img src="./tpl/images/home/banner/banner8.svg" alt=""></div>
                 </div>
                 <div class="content">
                     <!-- Your .info elements go here -->
-                    <div class="info"><h3><span>Din</span> mamma</h3></div>
-                    <div class="info"><h3><span>Din</span> pappa</h3></div>
-                    <div class="info"><h3><span>Din</span> syster</h3></div>
-                    <div class="info"><h3><span>Din</span> broder</h3></div>
-                    <div class="info"><h3><span>Du</span> också</h3></div>
+                    <div class="info"><h3 style="font-size:5em;">99</h3><span style="font-weight: 700;">problems</span></div>
+                    <div class="info"><img src="./tpl/images/home/banner/banner1.svg" alt=""></div>
+                    <div class="info"><span>but a bug <br> aint one</span></div>
+                    <div class="info"><img src="./tpl/images/home/banner/banner2.svg" alt=""></div>
+                    <div class="info"><span>Träffa lokala <br> programmerare</span></div>
+                    <div class="info"><img src="./tpl/images/home/banner/banner3.svg" alt=""></div>
+                    <div class="info"><span>... inom</span> <span style="font-weight: 700;">(2 km)</span></div>
+                    <div class="info"><img src="./tpl/images/home/banner/banner4.svg" alt=""></div>
+                    <div class="info"><span>Vill du</span></div>
+                    <div class="info"><img src="./tpl/images/home/banner/banner5.svg" alt=""></div>
+                    <div class="info"><span>skapa konst <br> med oss?</span></div>
+                    <div class="info"><img src="./tpl/images/home/banner/banner6.svg" alt=""></div>
+                    <div class="info"><span>Ring<br> oss</span></div>
+                    <div class="info"><img src="./tpl/images/home/banner/banner7.svg" alt=""></div>
+                    <div class="info"><span><a href="tel:+46736851904">073-685 1904</a></span></div>
+                    <div class="info"><img src="./tpl/images/home/banner/banner8.svg" alt=""></div>
                 </div>
             </div>     
         </section>
@@ -155,7 +186,7 @@
                 </p>
                 <div class="cta">
                     <div id="lottie-animation-1" style="width: 100px; height: 100px;"></div>
-                    <button>Läs mer om oss!</button>
+                    <a href="./om-oss"><button>Läs mer om oss!</button></a>
                     <div id="lottie-animation-2" style="width: 100px; height: 100px;"></div>
                 </div>
             </div>
@@ -169,10 +200,10 @@
                 </p>
             </div>
             <div class="grid">
-                <div><a href=""><img src="./tpl/images/home/kunder/dala-tapto.png" alt=""></a></div>
-                <div><a href=""><img src="./tpl/images/home/kunder/dalafastighetsservice.png" alt=""></a></div>
-                <div><a href=""><img src="./tpl/images/home/kunder/nack.png" alt=""></a></div>
-                <div><a href=""><img src="./tpl/images/home/kunder/omania.svg" alt=""></a></div>
+                <div><a href="./portfolj"><img src="./tpl/images/home/kunder/DalaTapto_Logo.svg" alt=""></a></div>
+                <div><a href="./portfolj"><img src="./tpl/images/home/kunder/Dala_Fastighetsservice_Logo.svg" alt=""></a></div>
+                <div><a href="./portfolj"><img src="./tpl/images/home/kunder/Nack_logo.svg" alt=""></a></div>
+                <div><a href="https://omania.se"><img src="./tpl/images/home/kunder/Omania_Logo.svg" alt=""></a></div>
             </div>
         </section>
         <section class="artiklar">
@@ -186,7 +217,7 @@
             <div id="posts-container" class="container">
             <script>
                 async function fetchPosts() {
-                    const response = await fetch('http://localhost/nack-pa-natet/wordpress/wp-json/wp/v2/posts');
+                    const response = await fetch('././wordpress/wp-json/wp/v2/posts');
                     const posts = await response.json();
                     return posts;
                 }
@@ -200,39 +231,39 @@
                     const postsContainer = document.getElementById('posts-container');
                     const posts = await fetchPosts();
 
-                    posts.forEach(post => {
-                    const postElement = document.createElement('div');
-                    const title = document.createElement('a');
-                    const date = document.createElement('p');
-                    const image = document.createElement('img');
+                    for (let i = 0; i < 3 && i < posts.length; i++) {
+                        const post = posts[i];
+                        const postElement = document.createElement('div');
+                        const title = document.createElement('a');
+                        const date = document.createElement('p');
+                        const image = document.createElement('img');
 
-                    title.innerHTML = post.title.rendered;
-                    title.href = `./tpl/single-article.php?id=${post.id}`; // Add this line to set the article link as the href attribute
-                    date.innerHTML = 'Published on: ' + formatDate(post.date);
+                        title.innerHTML = post.title.rendered;
+                        title.href = `https://www.nack-pa-natet.se/blogg/artikel?id=${post.id}`;
+                        date.innerHTML = 'Published on: ' + formatDate(post.date);
 
-                    // Display the featured image
-                    if (post.featured_media) {
-                        fetch(`http://localhost/nack-pa-natet/wordpress/wp-json/wp/v2/media/${post.featured_media}`)
-                        .then(response => response.json())
-                        .then(media => {
+                        if (post.featured_media) {
+                        fetch(`././wordpress/wp-json/wp/v2/media/${post.featured_media}`)
+                            .then(response => response.json())
+                            .then(media => {
                             image.src = media.source_url;
-                        })
-                        .catch(error => console.error('Error fetching featured media:', error));
+                            })
+                            .catch(error => console.error('Error fetching featured media:', error));
+                        }
+
+                        postElement.appendChild(image);
+                        postElement.appendChild(date);
+                        postElement.appendChild(title);
+
+                        postsContainer.appendChild(postElement);
                     }
-
-                    postElement.appendChild(image);
-                    postElement.appendChild(date);
-                    postElement.appendChild(title);
-
-                    postsContainer.appendChild(postElement);
-                    });
                 }
 
                 renderPosts();
             </script>
 
             </div>
-            <a href="./tpl/artiklar.php"><button>Fler artiklar!</button></a>
+            <a href="./blogg"><button>Fler artiklar!</button></a>
         </section>
     </main>
     <?php
@@ -269,4 +300,6 @@
         });
 
     </script>
+    <script type="text/javascript" src="../tpl/scripts/footer.js" async></script>
+    <script type="text/javascript" src="../tpl/scripts/index.js" async></script>
 </body>
